@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci sequence</title>
+</head>
+
+<body>
+    <h1>Fibonacci sequence</h1>
+    <section class="container">
+        <h2>One final bucket size </h2>
+        <div class="one-bucket">
+            <label>First number: </label>
+            <input id="firstInput" type="number" onchange="fibonacci()" />
+            <label>Second number: </label>
+            <input id="secondInput" type="number" onchange="fibonacci()" />
+        </div>
+        <div class="bucket-wrapper">
+            <div id="bucket"></div>
+        </div>
+        <div class="many-buckets">
+            <h2>Gradual bucket size increase</h2>
+            <label>Enter range: (1-20)</label>
+            <input id="number-range" type="number">
+            <button type="button" onclick="fibGenerator()">Generate sequence</button>
+            <div id="result"></div>
+        </div>
+    </section>
+</body>
+<script src="speak.js"></script>
+
+</html>
